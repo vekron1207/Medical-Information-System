@@ -1,0 +1,268 @@
+body{
+    min-height: 1200px;
+}
+
+/* Navigation bar */
+.z-navbar{
+    background-color: rgb(170, 57, 57);
+    color:rgb(255, 255, 255);
+    text-shadow: 2px 2px rgb(85, 0, 0);
+    min-height:200px;
+    position: fixed;
+    top: 0px;
+}
+
+/* Menu bar */
+.z-menubar{
+    background-color: #FFE986;
+    border-color: #FFDA34;
+}
+.z-menubar .navbar-nav > .active > a, .z-menubar .navbar-nav > .active > a:focus, .z-menubar .navbar-nav > .active > a:hover {
+    color: #4D3F00;
+    background-color: #FFDA34;
+}
+.z-menubar .navbar-nav > li > a {
+    color: #4D3F00;
+}
+.z-menubar .navbar-brand {
+    color: #4D3F00;
+}
+.z-menubar .navbar-brand:focus, .z-menubar .navbar-brand:hover {
+    color: #4D3F00;
+    background-color: transparent;
+}
+.z-menubar .navbar-nav > li > a:focus, .z-menubar .navbar-nav > li > a:hover {
+    color: #4D3F00;
+    background-color: transparent;
+}
+
+/* Canvas */
+@media screen and (max-width: 768px) {
+    .z-canvas{
+        margin-top:120px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .z-canvas{
+        margin-top: 100px;
+    }
+  }
+.z-canvas{
+    /* min-height: 600px; */
+    background:linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0));
+    /* background-color: rgba(255,255,255,0); */
+    box-shadow: 0px 5px 8px rgb(85, 0, 0);
+    padding:10px;
+}
+
+.z-strip{
+    /* background:radial-gradient(ellipse at bottom, rgb(170, 57, 57), transparent),
+        radial-gradient(ellipse at top, rgb(22, 124, 190), transparent);
+    color:  rgb(2, 40, 64); */
+    padding: 12px;
+    /* font-size:20px; */
+}
+.z-impcard{
+    background:rgba(255,255,255,1);
+    border: solid 1px rgb(170, 57, 57);
+    box-shadow: 0px 5px 8px rgb(85, 0, 0);
+    /* padding: 12px; */
+}
+.z-impcard .z-card-action{
+    float: left;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height: 15%;
+    background-color: rgb(170, 57, 57);
+    color: rgb(255,255,255);
+    border-radius: 0px;
+}
+.z-impcard .z-card-action:hover{
+    background-color: rgb(85, 0, 0);
+    color: rgb(255,255,255);
+    cursor: pointer;
+}
+.z-impcard .z-impcard-toggle{
+    position: relative;
+    top: 0px;
+    right:5px;
+    width: auto;
+    height: 15%;
+    background-color: rgb(170, 57, 57);
+    color: rgb(255,255,255);
+    border-radius: 0px;
+}
+.z-impcard .z-impcard-toggle:hover{
+    background-color: rgb(85, 0, 0);
+    color: rgb(255,255,255);
+    cursor: pointer;
+}
+.z-block{
+    /* background:rgba(255,255,255,1); */
+    color:  rgb(2, 40, 64);
+    padding: 12px;
+    max-height: 350px;
+    overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+    /* font-size:20px; */
+}
+.z-card{
+    /* float: left; */
+    display: inline-block;
+    background:rgba(255,255,255,1);
+    color:  rgb(2, 40, 64);
+    /* padding: 12px; */
+    height: 300px;
+    width: 280px;
+    box-shadow: 3px 3px 6px rgb(2, 40, 64);
+    margin-right: 10px;
+}
+.z-card:hover{
+    transform: scale(1.05);
+    border: solid 1px rgb(2, 40, 64);
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    overflow: hidden;
+}
+.z-card-description{
+    float: left;
+    width: 100%;
+    height: 85%;
+    padding: 8px;
+}
+.z-card-title{
+    text-align: center;
+    color: rgb(85, 0, 0);
+}
+.z-card-subtitle{
+    text-align: center;
+    color: rgb(170, 57, 57);
+}
+.z-card .z-card-action{
+    float: left;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height: 15%;
+    background-color: rgb(22, 124, 190);
+    color: rgb(255,255,255);
+    border-radius: 0px;
+}
+.z-card .z-card-action:hover{
+    background-color: rgb(2, 40, 64);
+    color: rgb(255,255,255);
+    cursor: pointer;
+}
+.z-card-img{
+    height: 60%;
+}
+.z-card-img img{
+    margin-left: 23%;
+}
+
+.disable-scrollbars::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* Chrome/Safari/Webkit */
+}
+
+.disable-scrollbars {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+}
+
+/* Background */
+.z-background{
+    -webkit-clip-path: polygon(20% 75%, 70% 40%, 100% 80%, 100% 20%, 80% 75%, 35% 10%, 0 80%, 0 20%);
+    clip-path: polygon(20% 75%, 70% 40%, 100% 80%, 100% 20%, 80% 75%, 35% 10%, 0 80%, 0 20%);
+    background-color: rgb(22, 124, 190);
+    z-index:-2;
+    position: fixed;
+    width: 100%;
+    min-height: 1000px;
+}
+.z-background2{
+    -webkit-clip-path: polygon(25% 71%, 60% 30%, 100% 80%, 100% 20%, 80% 70%, 20% 10%, 0 80%, 0% 25%);
+    clip-path: polygon(25% 71%, 60% 30%, 100% 80%, 100% 20%, 80% 70%, 20% 10%, 0 80%, 0% 25%);
+    background-color: rgb(2, 40, 64);
+    z-index:-1;
+    position: fixed;
+    width: 100%;
+    min-height: 1000px;
+}
+.z-background3{
+    -webkit-clip-path: polygon(60% 70%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(60% 70%, 100% 0, 100% 100%, 0% 100%);
+    background-color: rgb(170, 57, 57);
+    position: absolute;
+    bottom: 0px;
+    margin-left:-10px;
+    margin-right:-10px;
+    width: 100%;
+    height: 40%;
+}
+.z-background4{
+    -webkit-clip-path: polygon(65% 85%, 100% 25%, 100% 100%, 0% 100%);
+    clip-path: polygon(65% 85%, 100% 25%, 100% 100%, 0% 100%);
+    background-color:  rgb(85, 0, 0);
+    position: absolute;
+    bottom: 0px;
+    margin-left:-10px;
+    margin-right:-10px;
+    width: 100%;
+    height: 40%;
+    line-height: 90px;
+    text-align: end;
+}
+.developer-text{
+    color:rgb(255, 255, 255);
+    position: absolute;
+    bottom: 0px;
+    margin-left:-10px;
+    margin-right:-10px;
+    width: 100%;
+    height: 60px;
+    font-size: 2em;
+    line-height: 90px;
+    text-align: end;
+}
+.z-corner{
+    border: none;
+    text-decoration: none;
+}
+.z-optionbox{
+    /* display:none; */
+    float:left;
+    position: absolute;
+    z-index:5;
+    background-color: #ffffff;
+    color:#000000;
+    list-style:none;
+    padding:0px;
+    margin:0px;
+    box-shadow: 5px 5px 5px #888888;
+}
+.z-option{
+    padding:8px;
+    text-align:center;
+}
+.z-option:hover{
+    background-color:#d9534f;
+    color:#ffffff;
+    cursor:pointer;
+}
+.z-footer{
+    background-color: rgb(2, 40, 64);
+    color: rgb(255, 255, 255);
+}
+.min-ht{
+    min-height: 1000px;
+}
+.logout-button{
+    margin-top: 100px;
+    background:linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0));
+    /* background-color: rgba(255,255,255,0); */
+    box-shadow: 0px 5px 8px rgb(85, 0, 0);
+}
